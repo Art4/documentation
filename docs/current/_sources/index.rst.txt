@@ -8,5 +8,7 @@ Herzlich willkommen im Support Center von Youthweb!
 
    account/index
    faq/index
+   regeln-rechte/*
+   about/*
 
 Eine Übersicht über alle Themen findest du auch :ref:`in der Sitemap <contents>`.
