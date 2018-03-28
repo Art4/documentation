@@ -29,7 +29,7 @@ cp -r ../$REPO/_build/html/ ./docs/current
 # Add and commit changes.
 echo "create commit"
 git add -A .
-git commit -m "[ci skip] Build current version from $COMMIT."
+git commit -m "[ci skip] Build current version from $TRAVIS_COMMIT."
 if [ "$1" != "dry" ]; then
     echo "push to Github repo"
     # -q is very important, otherwise you leak your GH_TOKEN
