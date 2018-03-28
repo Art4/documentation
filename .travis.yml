@@ -9,4 +9,8 @@ install:
 script: make html -C _build/
 
 after_success:
-  - ./build_current.sh
+  - 'if [[ "$TRAVIS_BRANCH" == "master" && "$TRAVIS_PULL_REQUEST" == "false" ]]; then
+        ./build_current.sh;
+    elif [[ "$TRAVIS_BRANCH" == "develop" && "$TRAVIS_PULL_REQUEST" == "false" ]]; then
+        ./build_latest.sh;
+    fi'
