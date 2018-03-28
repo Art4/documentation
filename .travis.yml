@@ -10,7 +10,7 @@ env:
 install:
   - pip install sphinx
 
-script: make html
+script: make html -C _build/
 
 after_success:
   - ./build_current.sh
