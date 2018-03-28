@@ -5,6 +5,7 @@ Herzlich willkommen im Support Center von Youthweb!
 
 .. toctree::
    :maxdepth: 2
+   :glob:
 
    account/index
    faq/index
